@@ -1,5 +1,5 @@
 import urllib.request, os, threading, time, random, sys, requests, requests
-import cfscrape
+
 from colorama import Fore, Style
 import os
 import colorama
